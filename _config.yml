@@ -7,6 +7,9 @@ url: "http://crip.io" # the base hostname & protocol for your site
 twitter_username: cripreneurs
 github_username:  crip
 
+# Permalink
+permalink: /:title
+
 # Build settings
 markdown: kramdown
 
