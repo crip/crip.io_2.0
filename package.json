@@ -1,0 +1,25 @@
+{
+  "name": "Cripio_Blog",
+  "version": "1.0.0",
+  "description": "A simple blog for crip.io",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:crip/crip.io_2.0.git"
+  },
+  "author": "Johnie Hjelm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crip/crip.io_2.0/issues"
+  },
+  "homepage": "https://github.com/crip/crip.io_2.0",
+  "devDependencies": {
+    "browser-sync": "^1.5.2",
+    "gulp": "^3.8.8",
+    "gulp-plumber": "^0.6.5",
+    "gulp-size": "^1.1.0"
+  }
+}
