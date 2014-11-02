@@ -13,5 +13,10 @@ permalink: /:title
 # Build settings
 markdown: kramdown
 
+# Sass
+sass:
+  sass_dir: assets/_sass
+  style: :compressed
+
 # Exclude
 exclude: ['node_modules/', 'package.json', 'Gulpfile.js', 'fabfile.py', 'fabfile.pyc']

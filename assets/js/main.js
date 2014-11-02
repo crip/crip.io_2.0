@@ -20,13 +20,31 @@
         mainMenu.toggleClass('open-menu');
       });
 
+    }
+
+  };
+
+  var Fullvideos = {
+    init: function() {
+
+      this.starter();
+
     },
+
+    starter: function() {
+
+      var container = $(".page-content");
+
+      container.fitVids();
+
+    }
 
   };
 
   $(function() {
 
     MenuSetup.init();
+    Fullvideos.init();
 
   });
  
