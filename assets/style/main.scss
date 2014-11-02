@@ -92,7 +92,7 @@ nav[role="navigation"]{
   display: block;
   float: right;
   text-align: right;
-  line-height: 58px;
+  padding-top: 13px;
 
   @media (max-width: 800px) {
     display: none;
@@ -164,6 +164,21 @@ nav[role="navigation"]{
   transition: background-color .25s ease;
 
   display: none;
+
+  span{
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    width: 120%;
+    height: 700%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    cursor: pointer;
+  }
 
   &:before,
   &:after{
