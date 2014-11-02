@@ -4,7 +4,7 @@ title: Viktor Johansson
 permalink: /viktor/
 ---
 
-<img src="/images/viktor.jpg" alt="Viktor Johansson" class="crip-image">
+<img src="/images/viktor.png" alt="Viktor Johansson" class="crip-image">
 
 <p class="lead">I consider myself as a team player. For almost all my life I’ve been playing in different teams and constellations when it comes to sports. I’ve been a team captain, coaching youngsters and led big groups. To be able to rejoice together when achieving a great goal, support each other after defeat and develop together as one is incredibly enriching. This is something I’ve carried with me into my professional career working in IT and has helped me a lot.</p>
 
