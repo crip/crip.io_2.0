@@ -5,7 +5,7 @@
 /**
  * Crip as a Service
  */
-@import "normalize", "utils";
+@import "normalize", "utils", "content", "media";
 
 
 /*------------------------------------*\
@@ -14,28 +14,6 @@
 body{
   font-family: $base-font-family;
   color: $base-ui-color;
-}
-
-a{
-  color: $brand-color;
-  text-decoration: none;
-  transition: color .25s ease;
-
-  &:hover,
-  &:focus{
-    outline: none;
-    color: lighten($brand-color, 10%);
-  }
-}
-
-p, ul, ol{
-  font-family: $content-font-family;
-  font-size: 1.2em;
-}
-
-p{
-  line-height: 1.68;
-  margin-bottom: 2em;
 }
 
 /*------------------------------------*\
@@ -58,12 +36,23 @@ p{
     margin: 0 auto;
     position: relative;
     padding: 0px 10px;
+    height: 60px;
+
+    &:after{
+      content: ' ';
+      display: table;
+      clear: both;
+    }
   }
 
   &:after{
-    content: '';
+    content: ' ';
     display: table;
     clear: both;
+  }
+
+  @media (max-width: 800px) {
+    margin-bottom: 20px;
   }
 }
 
@@ -86,6 +75,16 @@ p{
     position: absolute;
     top: -5px;
     left: 0;
+
+    @media (max-width: 800px) {
+      width: 3em;
+      padding-bottom: 2.25em;
+      top: 50%;
+      left: 15px;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
   }
 }
 
@@ -94,6 +93,31 @@ nav[role="navigation"]{
   float: right;
   text-align: right;
   line-height: 58px;
+
+  @media (max-width: 800px) {
+    display: none;
+
+    &.open-menu{
+      display: block;
+      position: absolute !important;
+      float: none;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: $brand-base-color;
+      line-height: 1;
+
+      li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+        padding-left: 0;
+        width: 100%;
+        border-bottom: 1px solid white;
+      }
+    }
+  }
 }
 
 .nav{
@@ -121,19 +145,25 @@ nav[role="navigation"]{
       color: #fff;
     }
   }
+
 }
 
 .menu-icon{
   position: absolute;
   top: 50%;
-  right: 2.5em;
+  right: 15px;
   transform: translateY(-50%);
-  text-indent: -99999px;
   width: 2.6em;
   height: .4em;
   font-size: 10px;
   background-color: $base-ui-color;
   line-height: 1;
+  text-indent: -9999px;
+  -webkit-transition: background-color .25s ease;
+  -moz-transition: background-color .25s ease;
+  transition: background-color .25s ease;
+
+  display: none;
 
   &:before,
   &:after{
@@ -143,6 +173,9 @@ nav[role="navigation"]{
     background-color: $base-ui-color;
     position: absolute;
     left: 0;
+    -webkit-transition: transform .25s ease;
+    -moz-transition: transform .25s ease;
+    transition: transform .25s ease;
   }
 
   &:before{
@@ -152,11 +185,33 @@ nav[role="navigation"]{
   &:after{
     top: 200%;
   }
+
+  &.open{
+    background-color: transparent;
+
+    &:before{
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      transform: rotate(45deg);
+      bottom: 0%;
+    }
+
+    &:after{
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 0%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    display: block;
+  }
 }
 
 
 /*------------------------------------*\
-    $CONTENT
+    $PAGE AND POSTS
 \*------------------------------------*/
 .page-content{
   display: block;
@@ -180,6 +235,10 @@ nav[role="navigation"]{
   font-size: 2.5em;
   margin: 0;
   margin-bottom: 1em;
+
+  @media (max-width: 680px) {
+    font-size: 2em;
+  }
 }
 
 .post-link{
@@ -189,31 +248,4 @@ nav[role="navigation"]{
   &:focus{
     color: $brand-color;
   }
-}
-
-.lead{
-  font-size: 1.4em;
-}
-
-p code{
-  background-color: #eee;
-  border-bottom: 1px solid #ccc;
-  padding: 0px 2px;
-}
-
-pre, 
-pre + code{
-  background-color: $base-ui-color;
-  color: #fff;
-  padding: 15px;
-  border-radius: 5px;
-  display: block;
-  max-width: 100%;
-}
-
-.crip-image{
-  border-radius: 300px;
-  max-width: 250px;
-  float: right;
-  margin: 0 0 20px 20px;
 }

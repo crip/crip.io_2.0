@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    $MEDIA
+\*------------------------------------*/
+
+.crip-image{
+  border-radius: 300px;
+  max-width: 250px;
+  float: right;
+  margin: 0 0 20px 20px;
+
+  @media (max-width: 800px) {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
