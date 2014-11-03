@@ -57,6 +57,7 @@ a{
 p, ul, ol{
   font-family: $content-font-family;
   font-size: 1.2em;
+  line-height: 1.68;
 
   @media (max-width: 680px) {
     font-size: 1em;
@@ -73,6 +74,12 @@ p{
     @media (max-width: 680px) {
       font-size: 1.1em;
     }
+  }
+}
+
+ul, ol{
+  li{
+    margin-bottom: .5em;
   }
 }
 
