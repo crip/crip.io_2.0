@@ -16,6 +16,17 @@ body{
   color: $base-ui-color;
 }
 
+.container{
+  max-width: $container-width;
+  margin: 0 auto;
+
+  &:after{
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+}
+
 /*------------------------------------*\
     $HEADER
 \*------------------------------------*/
@@ -232,7 +243,7 @@ nav[role="navigation"]{
   display: block;
   margin: 0 auto;
   max-width: $container-width;
-  padding: 0px 10px;
+  padding: 0px 10px 2em;
 }
 
 .posts:not(:last-child){
@@ -262,5 +273,56 @@ nav[role="navigation"]{
   &:hover,
   &:focus{
     color: $brand-color;
+  }
+}
+
+
+.footer{
+  background-color: $base-ui-color;
+  color: #fff;
+  padding: 100px 10px 15px;
+
+  &:after{
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+}
+
+.copyright{
+  font-weight: 300;
+  font-size: 14px;
+  color: #BCBCBC;
+  display: inline-block;
+  line-height: 30px;
+}
+
+.social{
+  float: right;
+
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li{
+    display: inline-block;
+    padding-left: 1em;
+  }
+
+  svg{
+    fill: #BCBCBC;
+    transition: all .25s ease;
+  }
+
+  a{
+    display: block;
+
+    &:hover{
+      svg{
+        fill: white;
+      }
+    }
   }
 }
