@@ -1,7 +1,7 @@
 <head>
   <meta property="og:image" content="http://crip.io/images/fbimage.png"/>
-  <meta property="og:title" content="Crip as a Service"/>
-  <meta property="og:url" content="http://crip.io/"/>
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }} - {{ site.description }}{% endif %}"/>
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
   <meta property="og:site_name" content="Crip as a Service"/>
   <meta property="og:description" content="Two cripreneurs making the world a little bit better with web accessibility, testing and front-end development"/>
   <meta property="og:type" content="website" />
@@ -25,4 +25,5 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <meta charset="utf-8">
 </head>
+
 
