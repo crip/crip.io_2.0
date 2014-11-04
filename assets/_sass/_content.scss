@@ -37,7 +37,7 @@ h5{
 h6{
   font-size: 1.2em;
   font-weight: 600;
-  color: $brand-base-color;
+  color: darken(#F6F8FB, 30%);
 }
 
 
@@ -103,7 +103,7 @@ pre + code{
 blockquote{
   border-left: 5px solid $brand-color;
   padding: 3em;
-  background-color: #f9f9f9;
+  background-color: darken(#F6F8FB, 3%);
   margin: 0;
   margin-bottom: 5em;
 
