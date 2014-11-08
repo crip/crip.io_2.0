@@ -3,7 +3,7 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }} - {{ site.description }}{% endif %}"/>
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
   <meta property="og:site_name" content="Crip.io"/>
-  <meta property="og:description" content="{% if page.date %}{{ post.content | strip_html | truncatewords: 50 }}{% else %}Two cripreneurs making the world a little bit better with web accessibility, testing and front-end development{% endif %}"/>
+  <meta property="og:description" content="{% if page.date %}{{ page.content | strip_html | truncatewords: 50 }}{% else %}Two cripreneurs making the world a little bit better with web accessibility, testing and front-end development{% endif %}"/>
   <meta property="og:type" content="website" />
 
   <meta name="description" content="Crip.io">
