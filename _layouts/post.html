@@ -8,6 +8,12 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
 
+  {% if page.podcast %}
+    <div class="podcast">
+      <audio src="{{ page.podcast }}" preload="auto"></audio>
+    </div>
+  {% endif %}
+
   <article class="post-content">
     {{ content }}
   </article>

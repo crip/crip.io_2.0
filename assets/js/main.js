@@ -105,4 +105,10 @@
 
   });
  
+  /**
+   * Audio.js
+   */
+  audiojs.events.ready(function() { 
+    audiojs.createAll();
+  });
 }());

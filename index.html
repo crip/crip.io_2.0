@@ -10,6 +10,12 @@ layout: default
 
       <h2 class="post-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
+      {% if post.podcast %}
+        <div class="podcast">
+          <audio src="{{ post.podcast }}" preload="auto"></audio>
+        </div>
+      {% endif %}
+
       {{ post.content }}
     </article>
   {% endfor %}
