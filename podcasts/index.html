@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  {% for post in site.categories.podcast %}
+    <article class="posts">
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</span>
+
+      <h2 class="post-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      
+      <div class="podcast">
+        <audio src="{{ post.podcast }}" preload="auto"></audio>
+      </div>
+
+      {{ post.content }}
+    </article>
+  {% endfor %}
+
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+
+</div>

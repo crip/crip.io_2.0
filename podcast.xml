@@ -1,0 +1,41 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    <title>Crip Podcast</title>
+    <link>http://crip.io/</link>
+    <language>en</language>
+    <copyright>&#xA9; 2014 Johnie Hjelm &amp; Viktor Johansson</copyright>
+    <itunes:subtitle>Two crips discussing and kicking ass.</itunes:subtitle>
+    <itunes:author>Johnie Hjelm &amp; Viktor Johansson</itunes:author>
+    <itunes:keywords>new york,stockholm,news,talk,technology,web,geektalk,leadership,development,design,testing,johnie,hjelm,viktor,johansson</itunes:keywords>
+    <itunes:summary>A podcast from Johnie Hjelm and Viktor Johansson on all the things about digital media, design, testing, personal development and more…</itunes:summary>
+    <description>A podcast from Johnie Hjelm and Viktor Johansson, two crips conquering the world with testing, design, development and leadership.</description>
+    <itunes:owner>
+      <itunes:name>Johnie Hjelm</itunes:name>
+      <itunes:email>johniehjelm@me.com</itunes:email>
+    </itunes:owner>
+    <itunes:image href="http://crip.io/images/itunes.jpg" />
+    <itunes:category text="Leadership" />
+    <itunes:category text="Society &amp; Culture" />
+    <itunes:category text="Technology" />
+    <itunes:category text="Testing &amp; Development" />
+    <itunes:new-feed-url>http://crip.io/podcast.xml</itunes:new-feed-url>
+     {% for post in site.categories.podcast limit:10 %}
+       <item>
+         <title>{{ post.title }}</title>
+         <itunes:author>Johnie Hjelm &amp; Viktor Johansson</itunes:author>
+         <itunes:subtitle>Crip Podcast: {{ post.title }}</itunes:subtitle>
+         <itunes:summary>{{ post.content | xml_escape }}</itunes:summary>
+         <itunes:image href="http://crip.io/images/itunes.jpg" />
+         <enclosure url="{{ post.podcast }}" length="{{ post.length }}" type="audio/mp3" />
+         <guid>{{ post.podcast }}</guid>
+         <pubDate>{{ post.date | date: "%b %-d, %Y" }}</pubDate>
+         <itunes:duration>{{ post.duration }}</itunes:duration>
+         <itunes:keywords>new york,stockholm,news,talk,technology,web,geektalk,leadership,development,design,testing,johnie,hjelm,viktor,johansson</itunes:keywords>
+       </item>
+     {% endfor %}
+  </channel>
+</rss>

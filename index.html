@@ -6,9 +6,9 @@ layout: default
 
   {% for post in site.posts %}
     <article class="posts">
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</span>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} <span class="sep">•</span> {{ post.author }}{% endif %}{% if post.meta %} <span class="sep">•</span> {{ post.meta }}{% endif %}{% if post.category == 'podcast' %}{% else %} <span class="sep">•</span> Reading time: {{ post.content | reading_time }}{% endif %}</span>
 
-      <h2 class="post-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      <h2 class="post-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{% if post.category == 'podcast' %}Crip Podcast: {% endif %}{{ post.title }}</a></h2>
 
       {% if post.podcast %}
         <div class="podcast">
