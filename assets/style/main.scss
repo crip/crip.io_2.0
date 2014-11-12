@@ -33,6 +33,14 @@ body{
   margin: 0 .3em;
 }
 
+.clearfix{
+  &:after{
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+}
+
 /*------------------------------------*\
     $HEADER
 \*------------------------------------*/
@@ -292,6 +300,146 @@ nav[role="navigation"]{
 }
 
 
+
+/*------------------------------------*\
+    $PODCAST
+\*------------------------------------*/
+.podcasts{
+  display: block;
+  position: relative;
+  margin-bottom: 2.5em;
+  width: 100%;
+  background-color: $base-ui-color;
+  overflow: hidden;
+}
+
+.podcast__item{
+  display: block;
+  float: left;
+}
+
+.podcast-image{
+  width: 30%;
+
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  @media (max-width: 700px) {
+    width: 40%;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    float: none;
+
+    img{
+      width: 100%;  
+    }
+  }
+}
+
+.podcast-content{
+  color: #fff;
+  width: 70%;
+  position: relative;
+
+  p{
+    font-family: $base-font-family;
+    margin: 0;
+    display: block;
+    font-size: 1em;
+    color: #F6F8FB;
+  }
+
+  @media (max-width: 700px) {
+    width: 60%;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+    float: none;
+  }
+}
+
+.podcast-content__inner{
+  padding: 1em;
+}
+
+.podcast-name{
+  text-transform: uppercase;
+  color: $brand-color;
+  display: block;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.podcast-title{
+  margin: 0;
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: .4em;
+}
+
+.podcast-link{
+  color: #fff;
+}
+
+.podcast-index{
+  &:before{
+    content: '#';
+  }
+  &:after{
+    content: ':';
+  }
+  letter-spacing: -3px;
+  margin-right: 4px;
+}
+
+.play-btn{
+  font-size: 10px;
+  border: 3px solid #fff;
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  text-indent: -9999px;
+  border-radius: 50%;
+  opacity: .5;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+
+  &:after{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 50%;
+    right: 2px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    border: 8px solid transparent;
+    border-left-color: #fff;
+  }
+
+  &:hover{
+    opacity: 1;
+  }
+}
+
+
+
+/*------------------------------------*\
+    $FOOTEr
+\*------------------------------------*/
 .footer{
   background-color: $base-ui-color;
   color: #fff;

@@ -5,19 +5,41 @@ layout: default
 <div class="home">
 
   {% for post in site.posts %}
-    <article class="posts">
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} <span class="sep">•</span> {{ post.author }}{% endif %}{% if post.meta %} <span class="sep">•</span> {{ post.meta }}{% endif %}{% if post.category == 'podcast' %}{% else %} <span class="sep">•</span> Reading time: {{ post.content | reading_time }}{% endif %}</span>
-
-      <h2 class="post-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{% if post.category == 'podcast' %}Crip Podcast: {% endif %}{{ post.title }}</a></h2>
-
-      {% if post.podcast %}
-        <div class="podcast">
-          <audio src="{{ post.podcast }}" preload="auto"></audio>
+    {% if post.category == 'podcast' %}
+      
+      <article class="podcasts clearfix">
+        <div class="podcast__item podcast-image">
+          {% if post.coverimage %}
+            <img src="{{ post.coverimage }}" alt="Podcast Cover Image">
+          {% else %}
+            <img src="{{ "/images/podcastimage.png" | prepend: site.baseurl }}" alt="Podcast Cover Image">
+          {% endif %}
         </div>
-      {% endif %}
 
-      {{ post.content }}
-    </article>
+        <div class="podcast__item podcast-content">
+          <a href="{{ post.url | prepend: site.baseurl }}" class="play-btn">Play now</a>
+          <div class="podcast-content__inner">
+            {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
+            <small class="podcast-name">Crip Podcast <span class="sep">•</span> {{ post.date | date: "%b %-d, %Y" }}</small>
+
+            <h2 class="podcast-title"><a class="podcast-link" href="{{ post.url | prepend: site.baseurl }}"><span class="podcast-index">{{ post_count }}</span> {{ post.title }}</a></h2>
+
+            <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
+          </div>
+        </div>
+      </article>
+
+    {% else %}
+
+      <article class="posts">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} <span class="sep">•</span> {{ post.author }}{% endif %}{% if post.meta %} <span class="sep">•</span> {{ post.meta }}{% endif %}{% if post.category == 'podcast' %}{% else %} <span class="sep">•</span> Reading time: {{ post.content | reading_time }}{% endif %}</span>
+
+        <h2 class="post-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{% if post.category == 'podcast' %}Crip Podcast: {% endif %}{{ post.title }}</a></h2>
+
+        {{ post.content }}
+      </article>
+
+    {% endif %}
   {% endfor %}
 
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
