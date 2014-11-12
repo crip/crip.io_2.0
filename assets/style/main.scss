@@ -435,6 +435,25 @@ nav[role="navigation"]{
   }
 }
 
+.podcast-sub{
+  display: inline-block;
+  padding: 0 1.5em;
+  color: #fff;
+  text-decoration: none;
+  background-color: $base-ui-color;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 2.5;
+  margin-right: 10px;
+  -webkit-transition: background-color .25s ease;
+  -moz-transition: background-color .25s ease;
+  transition: background-color .25s ease;
+
+  &:hover{
+    background-color: $brand-color;
+    color: #fff;
+  }
+}
 
 
 /*------------------------------------*\
