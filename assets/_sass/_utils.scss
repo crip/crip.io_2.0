@@ -13,3 +13,9 @@ $container-width: 800px!default;
 // Fonts
 $base-font-family: "brandon-grotesque", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, arial, sans-serif;
 $content-font-family: "adelle", $base-font-family;
+
+
+// Use Grids
+$use-grids: true !default;
+$base-spacing-unit: 1em !default;
+$global-border-box: true !default;

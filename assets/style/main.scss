@@ -5,7 +5,7 @@
 /**
  * Crip.io
  */
-@import "normalize", "utils", "content", "media";
+@import "normalize", "utils", "widths", "grids", "content", "media";
 
 
 /*------------------------------------*\
@@ -354,14 +354,15 @@ nav[role="navigation"]{
 }
 
 .cripspiration__input{
-  color: $base-ui-color;
+  color: #fff;
   border: none;
   border-radius: 3px;
-  padding: 6px 10px;
+  padding: 8px 10px;
   width: 230px;
   display: block;
   text-align: center;
   margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
 
   &:hover,
   &:focus{
@@ -374,7 +375,7 @@ nav[role="navigation"]{
   color: #fff;
   background-color: $brand-color;
   text-align: center;
-  padding: 6px 10px;
+  padding: 8px 10px;
   width: 250px;
   border: none;
   border-radius: 3px;
