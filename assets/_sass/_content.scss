@@ -89,17 +89,6 @@ p code{
   padding: 0px 2px;
 }
 
-pre, 
-pre + code{
-  background-color: $base-ui-color;
-  color: #fff;
-  padding: 15px;
-  border-radius: 5px;
-  display: block;
-  max-width: 100%;
-}
-
-
 blockquote{
   border-left: 5px solid $brand-color;
   padding: 3em;
