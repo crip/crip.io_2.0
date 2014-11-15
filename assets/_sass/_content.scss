@@ -5,6 +5,7 @@
 
 h1{
   font-size: 3em;
+  line-height: 1.2;
 
   @media (max-width: 680px) {
     font-size: 2.6em;
@@ -12,6 +13,8 @@ h1{
 }
 h2{
   font-size: 2.2em;
+  line-height: 1.2;
+  
   @media (max-width: 680px) {
     font-size: 2em;
   }
@@ -94,7 +97,7 @@ blockquote{
   padding: 3em;
   background-color: darken(#F6F8FB, 3%);
   margin: 0;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 
   p{
     margin: 0;
