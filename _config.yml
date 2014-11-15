@@ -11,6 +11,10 @@ permalink: /:title
 # Build settings
 markdown: kramdown
 
+# Pagination
+paginate: 5
+paginate_path: "/page:num"
+
 # Sass
 sass:
   sass_dir: assets/_sass

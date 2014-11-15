@@ -630,3 +630,59 @@ nav[role="navigation"]{
   background-color: #F6F8FB;
   background-image: none;
 }
+
+
+
+
+/*------------------------------------*\
+    $PAGINATION
+\*------------------------------------*/
+.pagination{
+  padding: 1em 0;
+}
+
+.pagination__item{
+  width: 33.333333%;
+  float: left;
+  text-align: center;
+
+  &:first-child{
+    text-align: left;
+  }
+
+  &:last-child{
+    text-align: right;
+  }
+}
+
+.page_number{
+  display: block;
+  line-height: 2.3;
+  color: #999;
+}
+
+.pagination__btn{
+  display: inline-block;
+  background-color: $base-ui-color;
+  color: #fff;
+  font-weight: 600;
+  padding: 0 1em;
+  line-height: 2.5;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+
+  &:hover{
+    background-color: $brand-color;
+    color: #fff;
+  }
+}
+
+.previous span{
+  margin-right: .5em;
+}
+
+.next span{
+  margin-left: .5em;
+}
