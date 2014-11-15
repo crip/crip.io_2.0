@@ -659,6 +659,10 @@ nav[role="navigation"]{
   display: block;
   line-height: 2.3;
   color: #999;
+
+  @media (max-width: 640px) {
+    line-height: 2;
+  }
 }
 
 .pagination__btn{
@@ -676,6 +680,10 @@ nav[role="navigation"]{
   &:hover{
     background-color: $brand-color;
     color: #fff;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 12px;
   }
 }
 
