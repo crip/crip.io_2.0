@@ -4,6 +4,7 @@ layout: default
 
 <div class="home">
 
+  {% assign post_count = '0' %}
   {% for post in paginator.posts %}
     {% if post.category == 'podcast' %}
       
@@ -19,10 +20,9 @@ layout: default
         <div class="podcast__item podcast-content">
           <a href="{{ post.url | prepend: site.baseurl }}" class="play-btn">Play now</a>
           <div class="podcast-content__inner">
-            {% capture post_count %} {{ post_count | plus: 1 }} {% endcapture %}
             <small class="podcast-name">Crip Podcast <span class="sep">•</span> {{ post.date | date: "%b %-d, %Y" }}</small>
 
-            <h2 class="podcast-title"><a class="podcast-link" href="{{ post.url | prepend: site.baseurl }}"><span class="podcast-index">{{ post_count }}</span> {{ post.title }}</a></h2>
+            <h2 class="podcast-title"><a class="podcast-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 
             <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
           </div>

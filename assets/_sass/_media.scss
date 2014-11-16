@@ -20,3 +20,20 @@ img{
   max-width: 100%;
   height: auto;
 }
+
+
+.post-image{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.post-image--left{
+  margin: 0 20px 20px 0;
+  float: left;
+}
+
+.post-image--right{
+  margin: 0 0 20px 20px;
+  float: right;
+}

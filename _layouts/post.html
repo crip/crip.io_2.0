@@ -4,7 +4,7 @@ layout: default
 <div class="post">
 
   <header class="post-header">
-    <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}{% if page.category == 'podcast' %}{% else %} <span class="sep">•</span> {{ page.content | reading_time }}{% endif %} read.</span>
+    <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}{% if page.category == 'podcast' %}{% else %} <span class="sep">•</span> {{ page.content | reading_time }} read.{% endif %}</span>
     <h1 class="post-title">{% if page.category == 'podcast' %}Crip Podcast: {% endif %}{{ page.title }}</h1>
   </header>
 
@@ -16,7 +16,7 @@ layout: default
     </div>
   {% endif %}
 
-  <article class="post-content">
+  <article class="post-content clearfix">
     {{ content }}
   </article>
 
