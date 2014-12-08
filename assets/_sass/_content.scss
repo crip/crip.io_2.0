@@ -81,8 +81,14 @@ p{
 }
 
 ul, ol{
+  margin-bottom: 2em;
+
   li{
     margin-bottom: .5em;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 }
 
