@@ -20,4 +20,4 @@ An Cripreneur is an Entrepreneur. We therefore work just as hard for a sole prop
 
 ### Our motto
 
-> We are all broken; that's how the light gets in.
+> Optimism isn’t naive. It’s leadership.
