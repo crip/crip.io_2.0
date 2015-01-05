@@ -1,0 +1,21 @@
+{
+  "name": "cripio",
+  "version": "1.0.0",
+  "homepage": "https://github.com/crip/crip.io_2.0",
+  "authors": [
+    "Johnie Hjelm <johnie.hjelm@symbio.com>"
+  ],
+  "description": "Crip.io",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mediaelement": "~2.16.3"
+  }
+}
