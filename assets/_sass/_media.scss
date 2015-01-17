@@ -37,3 +37,13 @@ img{
   margin: 0 0 20px 20px;
   float: right;
 }
+
+
+/**
+ * Mejs
+ */
+
+.mejs-container .mejs-controls {
+  background:none !important;
+  background-color: $base-ui-color !important;
+}
