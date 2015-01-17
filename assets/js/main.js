@@ -102,7 +102,9 @@
     Fullvideos.init();
     Currentyear.init();
     Cripspiration.init();
-    $('audio').mediaelementplayer();
+    $('audio').mediaelementplayer({
+      audioWidth: '298'
+    });
 
   });
 
