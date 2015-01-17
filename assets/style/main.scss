@@ -131,6 +131,7 @@ nav[role="navigation"]{
       width: 100%;
       background-color: $brand-base-color;
       line-height: 1;
+      z-index: 100;
 
       li{
         display: block;
