@@ -20,5 +20,7 @@ sass:
   sass_dir: assets/_sass
   style: :compressed
 
+plugins: [jekyll-paginate]
+
 # Exclude
 exclude: ['node_modules/', 'package.json', 'Gulpfile.js', 'fabfile.py', 'fabfile.pyc']

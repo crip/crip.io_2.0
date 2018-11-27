@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/crip/crip.io_2.0",
   "devDependencies": {
-    "browser-sync": "^1.5.2",
+    "browser-sync": "^2.26.3",
     "gulp": "^3.8.8",
-    "gulp-plumber": "^0.6.5",
-    "gulp-size": "^1.1.0"
+    "gulp-plumber": "^1.2.0",
+    "gulp-size": "^3.0.0"
   }
 }
