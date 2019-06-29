@@ -19,12 +19,11 @@ layout: null
       <itunes:name>Johnie Hjelm</itunes:name>
       <itunes:email>johniehjelm@me.com</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://podcast.crip.io/images/poditunes.png" />
-    <itunes:category text="Leadership" />
-    <itunes:category text="Society &amp; Culture" />
-    <itunes:category text="Technology" />
-    <itunes:category text="Testing &amp; Development" />
-    <itunes:explicit>clean</itunes:explicit>
+    <itunes:image href="https://podcast.crip.io/images/podcover.jpg" />
+    <itunes:category text="Business">
+      <itunes:category text="Leadership" />
+      <itunes:category text="Technology" />
+    </itunes:category>
     <spotify:countryOfOrigin>
       se us
     </spotify:countryOfOrigin>
@@ -35,12 +34,13 @@ layout: null
          <itunes:author>Johnie Hjelm &amp; Viktor Johansson</itunes:author>
          <itunes:subtitle>Crip Podcast: {{ post.title }}</itunes:subtitle>
          <itunes:summary>{{ post.content | strip_html | truncatewords: 50 | xml_escape }}</itunes:summary>
-         <itunes:image href="https://podcast.crip.io/images/poditunes.png" />
+         <itunes:image href="https://podcast.crip.io/images/podcover.jpg" />
          <enclosure url="{{ post.podcast }}" length="{{ post.length }}" type="audio/mp3" />
          <guid>{{ post.podcast }}</guid>
          <pubDate>{{ post.date | date: "%b %-d, %Y" }}</pubDate>
          <itunes:duration>{{ post.duration }}</itunes:duration>
          <itunes:keywords>new york,stockholm,news,talk,technology,web,geektalk,leadership,development,design,testing,johnie,hjelm,viktor,johansson</itunes:keywords>
+         <itunes:explicit>no</itunes:explicit>
        </item>
      {% endfor %}
   </channel>
