@@ -10,6 +10,6 @@ category: podcast
 
 <p class="lead">We have the pleasure to announce that we are publishing our first podast!</p>
 
-Our goal is to talk about all things digital media, design, testing, personal development, entrepreneurship and more… We also plan to interview some recognized people in our community, but if you know someone specific - don't hesitate to ping us on [Facebook](http://fb.com/cripreneurs) or [Twitter](http://twitter.com/cripreneurs)
+Our goal is to talk about all things digital media, design, testing, personal development, entrepreneurship and more… We also plan to interview some recognized people in our community, but if you know someone specific - don't hesitate to ping us on [Facebook](http://fb.com/cripintech) or [Twitter](http://twitter.com/cripintech)
 
 **Stay tuned for a new episode each monday and soon on iTunes!**

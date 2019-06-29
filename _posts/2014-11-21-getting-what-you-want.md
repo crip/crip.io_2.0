@@ -29,7 +29,7 @@ In fact, if you think about it; we live in the most amazing moment in time. So t
 
 You can walk into a book store and buy at least ten books written by credentialed experts on how the hell you do it. Or you could Google it. And you could probably find at least a thousand blogs documenting the step, by step transformation that somebody else is already doing.
 
-You can find anybody online and cyber-stalk them! [Like us!](http://fb.com/cripreneurs)
+You can find anybody online and cyber-stalk them! [Like us!](http://fb.com/cripintech)
 
 Follow what everyone else has done, because somebody is already doing it!
 
