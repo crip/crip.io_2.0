@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="https://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:spotify="https://www.spotify.com/ns/rss" version="2.0">
   <channel>
-    <atom:link href="https://podcast.crip.io/podcast.xml" rel="self" type="application/rss+xml"/>
     <title>Crip Podcast</title>
     <link>https://podcast.crip.io/</link>
     <language>en</language>
