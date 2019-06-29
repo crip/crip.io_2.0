@@ -1,9 +1,9 @@
 # Site settings
 title: Crip.io
 email: info@crip.io
-description: Two Cripreneurs kicking ass in the digital world.
+description: We are set to make a difference in the tech industry
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://crip.io" # the base hostname & protocol for your site
+url: "http://podcast.crip.io" # the base hostname & protocol for your site
 
 # Permalink
 permalink: /:title
