@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="https://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
+    <atom:link href="https://podcast.crip.io/podcast.xml" rel="self" type="application/rss+xml"/>
     <title>Crip Podcast</title>
     <link>https://podcast.crip.io/</link>
     <language>en</language>
+    <ttl>60</ttl>
     <copyright>&#xA9; 2014 Johnie Hjelm &amp; Viktor Johansson</copyright>
     <itunes:subtitle>We are set to make a difference in the tech industry</itunes:subtitle>
     <itunes:author>Johnie Hjelm &amp; Viktor Johansson</itunes:author>
+    <author>Johnie Hjelm &amp; Viktor Johansson</itunes:author>
     <itunes:keywords>new york,stockholm,news,talk,technology,web,geektalk,leadership,development,design,testing,johnie,hjelm,viktor,johansson</itunes:keywords>
     <itunes:summary>A podcast from Johnie Hjelm and Viktor Johansson on all the things about digital media, design, testing, personal development and more…</itunes:summary>
     <description>A podcast from Johnie Hjelm and Viktor Johansson, two crips conquering the world with testing, design, development and leadership.</description>
@@ -19,6 +22,10 @@
     <itunes:category text="Society &amp; Culture" />
     <itunes:category text="Technology" />
     <itunes:category text="Testing &amp; Development" />
+    <itunes:explicit>clean</itunes:explicit>
+    <spotify:countryOfOrigin>
+      se us
+    </spotify:countryOfOrigin>
     <itunes:new-feed-url>https://podcast.crip.io/podcast.xml</itunes:new-feed-url>
      
        <item>
