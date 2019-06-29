@@ -11,9 +11,14 @@ var gulp        = require("gulp"),
 /**
  * Build the Jekyll Site
  */
-gulp.task('jekyll-build', function (done) {
+gulp.task('jekyll-build', ['copy'], function (done) {
   return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
       .on('close', done);
+});
+
+gulp.task('copy', function () {
+  gulp.src('./CNAME')
+    .pipe(gulp.dest('./_site/'));
 });
 
 /**
