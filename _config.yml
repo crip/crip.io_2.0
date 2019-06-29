@@ -3,7 +3,7 @@ title: Crip.io
 email: info@crip.io
 description: We are set to make a difference in the tech industry
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://podcast.crip.io" # the base hostname & protocol for your site
+url: "https://podcast.crip.io" # the base hostname & protocol for your site
 
 # Permalink
 permalink: /:title

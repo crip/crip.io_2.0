@@ -1,6 +1,6 @@
 <head>
   <meta name="google-site-verification" content="TyS580oMlOgsAWrrfWA2jwYtVMdNNI6SbcZF4FUrG-M" />
-  <meta property="og:image" content="{% if page.fbimage %}{{ page.fbimage }}{% else %}http://podcast.crip.io/images/fbimage.png{% endif %}"/>
+  <meta property="og:image" content="{% if page.fbimage %}{{ page.fbimage }}{% else %}https://podcast.crip.io/images/fbimage.png{% endif %}"/>
   <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }} - {{ site.description }}{% endif %}"/>
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
   <meta property="og:site_name" content="Crip Podcast"/>
@@ -14,10 +14,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui" />
   <link rel="icon" type="image/png" href="{{ site.url }}/images/favicon.png">
 
-  <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script type="text/javascript">google.load("jquery", "1");</script>
-  <script src="//use.typekit.net/oni3vzi.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
 
   <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }} - {{ site.description }}{% endif %}</title>
   <meta name="description" content="{{ site.description }}">
