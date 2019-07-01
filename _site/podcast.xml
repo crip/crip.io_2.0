@@ -24,6 +24,7 @@
     <spotify:countryOfOrigin>
       se us
     </spotify:countryOfOrigin>
+    <itunes:explicit>no</itunes:explicit>
     <itunes:new-feed-url>https://podcast.crip.io/podcast.xml</itunes:new-feed-url>
      
        <item>
